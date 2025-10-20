@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashcards Billie Eilish</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top left, #000000, #1b1b1b, #111);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    gap: 20px;
+  }
+
+  .card {
+    width: 250px;
+    height: 160px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+
+  .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+  }
+
+  .card:hover .inner {
+    transform: rotateY(180deg);
+  }
+
+  .front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+
+  .front {
+    background: linear-gradient(135deg, #00e676, #00c853);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .back {
+    background: linear-gradient(135deg, #222, #000);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  .front img {
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="inner">
+    <div class="front">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Billie_Eilish_at_2020_Grammys_%28cropped%29.jpg" alt="Billie Eilish">
+      <h3>¿Quién es?</h3>
+    </div>
+    <div class="back">
+      <p>Billie Eilish es una cantante y compositora estadounidense nacida en 2001, conocida por su estilo único y su voz distintiva.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="inner">
+    <div class="front">
+      <h3>Primer gran éxito</h3>
+    </div>
+    <div class="back">
+      <p>Su tema <strong>"Ocean Eyes"</strong> (2015), grabado con su hermano Finneas, la lanzó a la fama global desde SoundCloud.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="inner">
+    <div class="front">
+      <h3>Premios Grammy</h3>
+    </div>
+    <div class="back">
+      <p>En 2020 ganó 5 premios Grammy, incluyendo Álbum del Año y Canción del Año por <em>Bad Guy</em>.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="inner">
+    <div class="front">
+      <h3>Estilo y personalidad</h3>
+    </div>
+    <div class="back">
+      <p>Conocida por su estética oscura, autenticidad y temas introspectivos, es un ícono de la generación Z.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="inner">
+    <div class="front">
+      <h3>Dato curioso</h3>
+    </div>
+    <div class="back">
+      <p>Billie fue la persona más joven en grabar un tema oficial de James Bond: <strong>"No Time To Die"</strong> (2020).</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
